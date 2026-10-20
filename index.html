@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rohan Menon | Software Automation Engineer</title>
+  <meta name="description" content="Portfolio of Rohan Menon, a computer science student focused on test automation, API testing and CI pipelines.">
+  <meta name="theme-color" content="#0c0d0e">
+  <meta property="og:title" content="Rohan Menon | Software Automation Engineer">
+  <meta property="og:description" content="Test frameworks, API checks and CI pipelines. Open to internships.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    /* runs before paint so the page never flashes the wrong theme */
+    (function () {
+      var root = document.documentElement;
+      root.classList.add("js");
+      var saved = null;
+      try { saved = localStorage.getItem("theme"); } catch (e) {}
+      var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      root.setAttribute("data-theme", saved || (dark ? "dark" : "light"));
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="header-sentinel" id="sentinel" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="wrap bar">
+      <a class="brand" href="#top" aria-label="Rohan Menon, back to top">rohan<span>.</span>menon</a>
+
+      <nav aria-label="Main">
+        <ul class="nav-links" id="nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="bar-actions">
+        <button class="icon-btn" id="themeBtn" type="button" aria-label="Switch colour theme">
+          <span class="i i-sun" aria-hidden="true"></span>
+          <span class="i i-moon" aria-hidden="true"></span>
+        </button>
+        <button class="icon-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+          <span class="i i-list" aria-hidden="true"></span>
+          <span class="i i-x" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- hero -->
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="status" data-reveal>Rohan Menon, open to internships</p>
+          <h1 data-reveal style="--d:.05s">Test automation that <em>holds up</em> in CI.</h1>
+          <p class="hero-sub" data-reveal style="--d:.1s">Final-year CS student building test frameworks, CI pipelines and API checks in Python, Java and JavaScript.</p>
+          <div class="hero-cta" data-reveal style="--d:.15s">
+            <a class="btn btn-primary" href="#projects">View projects <span class="i i-arrow-right" aria-hidden="true"></span></a>
+            <a class="btn btn-ghost" href="resume/Rohan-Menon-Resume.pdf" download><span class="i i-download-simple" aria-hidden="true"></span> Download resume</a>
+          </div>
+        </div>
+
+        <figure class="portrait" data-reveal style="--d:.12s">
+          <!-- placeholder photo, swap it for your own portrait (4:5 works best) -->
+          <img src="https://picsum.photos/seed/rohan-desk-setup/880/1100" width="880" height="1100" alt="Rohan at his desk" fetchpriority="high">
+        </figure>
+      </div>
+    </section>
+
+    <!-- about and resume -->
+    <section id="about">
+      <div class="wrap about-grid">
+        <div class="about-side" data-reveal>
+          <h2 class="sec-title">I break software before users do.</h2>
+          <p class="sec-lead">I like the slow, boring part of shipping: making sure the checkout still works after the tenth refactor. Over the last two years I have written UI, API and mobile tests, and wired them into pipelines that fail loudly and early.</p>
+          <dl class="facts">
+            <div><dt>Based in</dt><dd>Kochi, Kerala</dd></div>
+            <div><dt>Looking for</dt><dd>QA automation internship, 6 months</dd></div>
+            <div><dt>Available</dt><dd>From January 2027</dd></div>
+            <div><dt>Languages</dt><dd>English, Malayalam, Hindi</dd></div>
+          </dl>
+        </div>
+
+        <div>
+          <div class="cluster" data-reveal>
+            <h3><span class="i i-graduation-cap" aria-hidden="true"></span> Education</h3>
+            <div class="entry">
+              <div class="entry-head"><h4>B.Tech, Computer Science and Engineering</h4><time>2022 - 2026</time></div>
+              <p class="org">Malabar Institute of Technology, Kerala</p>
+              <ul>
+                <li>CGPA 8.4. Electives in software testing and cloud computing.</li>
+                <li>Final-year project: a regression framework for the college admissions portal.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="cluster" data-reveal>
+            <h3><span class="i i-briefcase" aria-hidden="true"></span> Experience</h3>
+            <div class="entry">
+              <div class="entry-head"><h4>QA Automation Intern</h4><time>Jun - Aug 2025</time></div>
+              <p class="org">Tidewater Systems, Kochi</p>
+              <ul>
+                <li>Moved 60 manual regression cases for a billing app into Playwright and TypeScript.</li>
+                <li>Set up a nightly GitHub Actions run that posts an Allure report to the team channel.</li>
+                <li>Found and fixed a handful of flaky waits that were failing about one build in five.</li>
+              </ul>
+            </div>
+            <div class="entry">
+              <div class="entry-head"><h4>Test Lead, Campus Developer Club</h4><time>2024 - 2025</time></div>
+              <p class="org">Malabar Institute of Technology</p>
+              <ul>
+                <li>Ran a weekly workshop on Selenium and Pytest for second-year students.</li>
+                <li>Reviewed test code on club projects and set up a shared pre-commit lint config.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="cluster" data-reveal>
+            <h3><span class="i i-certificate" aria-hidden="true"></span> Certifications</h3>
+            <div class="entry">
+              <div class="entry-head"><h4>ISTQB Certified Tester, Foundation Level</h4><time>2025</time></div>
+            </div>
+            <div class="entry">
+              <div class="entry-head"><h4>Postman API Fundamentals Student Expert</h4><time>2024</time></div>
+            </div>
+            <div class="entry">
+              <div class="entry-head"><h4>Oracle Java SE Foundations</h4><time>2024</time></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills -->
+    <section class="skills" id="skills">
+      <div class="wrap">
+        <div data-reveal>
+          <h2 class="sec-title">The tools I reach for.</h2>
+          <p class="sec-lead">Grouped by what they do in a project, not by how long I have used them.</p>
+        </div>
+
+        <div class="skill-grid">
+          <div class="sg sg-a" data-reveal>
+            <h3>Test automation</h3>
+            <p>Browser, mobile and behaviour-driven frameworks.</p>
+            <ul class="tools">
+              <li class="tool"><span class="t t-selenium" aria-hidden="true"></span>Selenium</li>
+              <li class="tool"><span class="t t-playwright" aria-hidden="true"></span>Playwright</li>
+              <li class="tool"><span class="t t-cypress" aria-hidden="true"></span>Cypress</li>
+              <li class="tool"><span class="t t-appium" aria-hidden="true"></span>Appium</li>
+              <li class="tool"><span class="t t-cucumber" aria-hidden="true"></span>Cucumber</li>
+              <li class="tool"><span class="t t-robotframework" aria-hidden="true"></span>Robot Framework</li>
+              <li class="tool"><span class="t t-pytest" aria-hidden="true"></span>Pytest</li>
+              <li class="tool"><span class="t t-junit5" aria-hidden="true"></span>JUnit 5</li>
+              <li class="tool"><span class="i i-test-tube" aria-hidden="true"></span>TestNG</li>
+            </ul>
+          </div>
+
+          <div class="sg sg-b" data-reveal style="--d:.08s">
+            <h3>Languages and data</h3>
+            <p>What the tests and the helpers are written in.</p>
+            <ul class="tools">
+              <li class="tool"><span class="t t-python" aria-hidden="true"></span>Python</li>
+              <li class="tool"><span class="t t-openjdk" aria-hidden="true"></span>Java</li>
+              <li class="tool"><span class="t t-javascript" aria-hidden="true"></span>JavaScript</li>
+              <li class="tool"><span class="t t-typescript" aria-hidden="true"></span>TypeScript</li>
+              <li class="tool"><span class="t t-gnubash" aria-hidden="true"></span>Bash</li>
+              <li class="tool"><span class="t t-mysql" aria-hidden="true"></span>MySQL</li>
+              <li class="tool"><span class="t t-postgresql" aria-hidden="true"></span>PostgreSQL</li>
+            </ul>
+          </div>
+
+          <div class="sg sg-c" data-reveal>
+            <h3>CI/CD and environments</h3>
+            <p>Where the suites run and how they get there.</p>
+            <ul class="tools">
+              <li class="tool"><span class="t t-githubactions" aria-hidden="true"></span>GitHub Actions</li>
+              <li class="tool"><span class="t t-jenkins" aria-hidden="true"></span>Jenkins</li>
+              <li class="tool"><span class="t t-gitlab" aria-hidden="true"></span>GitLab CI</li>
+              <li class="tool"><span class="t t-docker" aria-hidden="true"></span>Docker</li>
+              <li class="tool"><span class="t t-kubernetes" aria-hidden="true"></span>Kubernetes</li>
+              <li class="tool"><span class="t t-apachemaven" aria-hidden="true"></span>Maven</li>
+              <li class="tool"><span class="t t-gradle" aria-hidden="true"></span>Gradle</li>
+              <li class="tool"><span class="t t-linux" aria-hidden="true"></span>Linux</li>
+            </ul>
+          </div>
+
+          <div class="sg sg-d" data-reveal style="--d:.08s">
+            <h3>APIs, performance and tracking</h3>
+            <p>Checking services directly, then keeping the paperwork tidy.</p>
+            <ul class="tools">
+              <li class="tool"><span class="t t-postman" aria-hidden="true"></span>Postman</li>
+              <li class="tool"><span class="i i-flask" aria-hidden="true"></span>REST Assured</li>
+              <li class="tool"><span class="t t-apachejmeter" aria-hidden="true"></span>JMeter</li>
+              <li class="tool"><span class="t t-k6" aria-hidden="true"></span>k6</li>
+              <li class="tool"><span class="i i-bug" aria-hidden="true"></span>Allure Report</li>
+              <li class="tool"><span class="t t-jira" aria-hidden="true"></span>Jira</li>
+              <li class="tool"><span class="t t-git" aria-hidden="true"></span>Git</li>
+              <li class="tool"><span class="t t-github" aria-hidden="true"></span>GitHub</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- projects -->
+    <section id="projects">
+      <div class="wrap">
+        <div data-reveal>
+          <h2 class="sec-title">Projects I would show a reviewer first.</h2>
+          <p class="sec-lead">Click any card for the details, the stack and the repo link.</p>
+        </div>
+
+        <div class="bento">
+          <article class="proj p-a" data-reveal>
+            <div class="proj-media"><img src="https://picsum.photos/seed/shopflow-storefront/1000/563" width="1000" height="563" alt="" loading="lazy"></div>
+            <div class="proj-body">
+              <h3><button class="proj-open" type="button" data-project="shopflow">ShopFlow E2E Suite</button></h3>
+              <p>End-to-end checks for a demo storefront, split across four CI workers so a full run stays short.</p>
+              <div class="proj-foot">
+                <div class="proj-stack" aria-label="Built with Playwright, TypeScript, GitHub Actions">
+                  <span class="t t-playwright" aria-hidden="true"></span><span class="t t-typescript" aria-hidden="true"></span><span class="t t-githubactions" aria-hidden="true"></span>
+                </div>
+                <span class="proj-go" aria-hidden="true"><span class="i i-arrow-up-right"></span></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj p-b" data-reveal style="--d:.08s">
+            <div class="proj-body">
+              <h3><button class="proj-open" type="button" data-project="contract">Contract Check</button></h3>
+              <p>API regression checks that compare live responses against the OpenAPI spec.</p>
+              <div class="proj-foot">
+                <div class="proj-stack" aria-label="Built with Python, Pytest, Postman">
+                  <span class="t t-python" aria-hidden="true"></span><span class="t t-pytest" aria-hidden="true"></span><span class="t t-postman" aria-hidden="true"></span>
+                </div>
+                <span class="proj-go" aria-hidden="true"><span class="i i-arrow-up-right"></span></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj p-c" data-reveal>
+            <div class="proj-body">
+              <h3><button class="proj-open" type="button" data-project="pocketqa">PocketQA</button></h3>
+              <p>Android smoke tests that boot an emulator, install the build and walk the core flows.</p>
+              <div class="proj-foot">
+                <div class="proj-stack" aria-label="Built with Appium, Python, Pytest">
+                  <span class="t t-appium" aria-hidden="true"></span><span class="t t-python" aria-hidden="true"></span><span class="t t-pytest" aria-hidden="true"></span>
+                </div>
+                <span class="proj-go" aria-hidden="true"><span class="i i-arrow-up-right"></span></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj p-d" data-reveal style="--d:.08s">
+            <div class="proj-media"><img src="https://picsum.photos/seed/grid-runner-racks/1000/563" width="1000" height="563" alt="" loading="lazy"></div>
+            <div class="proj-body">
+              <h3><button class="proj-open" type="button" data-project="gridrunner">Grid Runner</button></h3>
+              <p>Selenium Grid in Docker with a Jenkins job that runs cross-browser tests every night.</p>
+              <div class="proj-foot">
+                <div class="proj-stack" aria-label="Built with Selenium, Java, Docker, Jenkins">
+                  <span class="t t-selenium" aria-hidden="true"></span><span class="t t-openjdk" aria-hidden="true"></span><span class="t t-docker" aria-hidden="true"></span><span class="t t-jenkins" aria-hidden="true"></span>
+                </div>
+                <span class="proj-go" aria-hidden="true"><span class="i i-arrow-up-right"></span></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj p-e" data-reveal>
+            <div class="proj-body">
+              <h3><button class="proj-open" type="button" data-project="flakewatch">Flake Watch</button></h3>
+              <p>Collects results from every CI run, flags tests that pass and fail on the same commit, and posts a weekly summary so the worst offenders get fixed first.</p>
+              <div class="proj-foot">
+                <div class="proj-stack" aria-label="Built with Python, PostgreSQL, GitHub Actions">
+                  <span class="t t-python" aria-hidden="true"></span><span class="t t-postgresql" aria-hidden="true"></span><span class="t t-githubactions" aria-hidden="true"></span>
+                </div>
+                <span class="proj-go" aria-hidden="true"><span class="i i-arrow-up-right"></span></span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+      <div class="wrap contact-grid">
+        <div data-reveal>
+          <h2 class="sec-title">Have a test backlog that needs hands?</h2>
+          <p class="sec-lead">I read every message and usually reply within a day or two.</p>
+          <ul class="links">
+            <li><a href="mailto:rohanmenon@gmail.com"><span class="i i-envelope-simple" aria-hidden="true"></span>rohan.menon.dev@example.com<span class="i i-arrow-up-right arrow" aria-hidden="true"></span></a></li>
+            <li><a href="https://github.com/rohanmenon-dev" target="_blank" rel="noopener"><span class="i i-github-logo" aria-hidden="true"></span>github.com/rohanmenon-dev<span class="i i-arrow-up-right arrow" aria-hidden="true"></span></a></li>
+            <li><a href="https://www.linkedin.com/in/rohanmenon-dev" target="_blank" rel="noopener"><span class="i i-linkedin-logo" aria-hidden="true"></span>linkedin.com/in/rohanmenon-dev<span class="i i-arrow-up-right arrow" aria-hidden="true"></span></a></li>
+            <li><a href="tel:+919000000000"><span class="i i-phone" aria-hidden="true"></span>+91 90000 00000<span class="i i-arrow-up-right arrow" aria-hidden="true"></span></a></li>
+          </ul>
+        </div>
+
+        <form class="form" id="contactForm" novalidate data-reveal style="--d:.08s">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="Priya Nair" aria-describedby="name-err" required>
+            <p class="err" id="name-err" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="priya@company.com" aria-describedby="email-err" required>
+            <p class="err" id="email-err" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about the project or the role." aria-describedby="message-hint message-err" required></textarea>
+            <p class="hint" id="message-hint">A couple of sentences is plenty.</p>
+            <p class="err" id="message-err" role="alert"></p>
+          </div>
+          <div class="form-foot">
+            <button class="btn btn-primary" type="submit" id="sendBtn">Send message <span class="i i-arrow-right" aria-hidden="true"></span></button>
+            <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot">
+      <p>&copy; <span id="year">2026</span> Rohan Menon</p>
+    </div>
+  </footer>
+
+  <!-- project popup, filled in by js/main.js -->
+  <dialog class="modal" id="projectModal" aria-labelledby="modalTitle">
+    <button class="icon-btn modal-close" type="button" id="modalClose" aria-label="Close project details"><span class="i i-x" aria-hidden="true"></span></button>
+    <div class="modal-media"><img id="modalImg" src="" alt="" width="1000" height="438"></div>
+    <div class="modal-body">
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <ul id="modalPoints"></ul>
+      <div class="chips" id="modalStack"></div>
+      <div class="modal-links" id="modalLinks"></div>
+    </div>
+  </dialog>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
